@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
     private Button logInButton,logOutButton;
@@ -20,16 +21,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         logInButton = (Button) findViewById(R.id.loginButtonID);
         logOutButton = (Button) findViewById(R.id.logoutButtonID);
 
-        logInButton.setOnClickListener(this);
-        logOutButton.setOnClickListener(this);
     }
 
-    @Override
-    public void onClick(View v) {
+
+    public void showMessage(View v) {
         if(v.getId()==R.id.loginButtonID){
-           textView.setText("You Clicked Login Button.");
-        }else if(v.getId()==R.id.logoutButtonID){
-            textView.setText("You Clicked Logout Button.");
+           /// textView.setText("You Clicked Login Button.");
+            Toast.makeText(MainActivity.this,"You Clicked Login Button.",Toast.LENGTH_SHORT).show();
+        }
+        else if(v.getId()==R.id.logoutButtonID){
+            /// textView.setText("You Clicked Logout Button.");
+            Toast.makeText(MainActivity.this,"You Clicked Logout Button.",Toast.LENGTH_SHORT).show();
         }
     }
 }
