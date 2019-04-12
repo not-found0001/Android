@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestApp</string>
+    <string name="toastText">You Clicked In This Button.</string>
 </resources>
