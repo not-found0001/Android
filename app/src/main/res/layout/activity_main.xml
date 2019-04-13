@@ -9,59 +9,50 @@
     android:background="@color/LightCyan"
     tools:context=".MainActivity">
 
-    <TextView
+    <RadioGroup
+        android:id="@+id/radioGroupID"
+        android:layout_margin="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/firstText"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        />
+        android:layout_height="wrap_content">
 
-    <CheckBox
-        android:id="@+id/milkCheckboxID"
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/milkText"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        />
+        <RadioButton
+            android:id="@+id/maleTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maleText"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
 
-    <CheckBox
-        android:id="@+id/sugarCheckboxID"
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sugarText"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        />
+        <RadioButton
+            android:id="@+id/femaleTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femaleText"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
 
-    <CheckBox
-        android:id="@+id/orangeCheckboxID"
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/orangeText"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        />
+
+    </RadioGroup>
 
     <Button
+        android:layout_marginLeft="20dp"
         android:id="@+id/clickButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Here To Show Which Item You Selected."
-        android:layout_marginTop="15dp"
+        android:text="Show"
+        android:layout_marginTop="10dp"
         android:textSize="15sp"
         android:textStyle="bold"
         />
 
     <TextView
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:textColor="@color/black"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/resultTextID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

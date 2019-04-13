@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">TestApp</string>
-    <string name="firstText">What do you want to buy ?</string>
-    <string name="milkText">Milk</string>
-    <string name="sugarText">Sugar</string>
-    <string name="orangeText">Orange</string>
+    <string name="maleText">Male</string>
+    <string name="femaleText">Female</string>
 </resources>
