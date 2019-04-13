@@ -5,17 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:padding="10dp"
     android:background="@color/LightCyan"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/clickButtonID"
-        android:onClick="showMessage"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Here"
+        android:text="@string/firstText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <CheckBox
+        android:id="@+id/milkCheckboxID"
         android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/milkText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/sugarCheckboxID"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sugarText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/orangeCheckboxID"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orangeText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/clickButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Here To Show Which Item You Selected."
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:id="@+id/resultTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textStyle="bold"
         />

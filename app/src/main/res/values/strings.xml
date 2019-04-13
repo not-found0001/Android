@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TestApp</string>
-    <string name="toastText">You Clicked In This Button.</string>
+    <string name="firstText">What do you want to buy ?</string>
+    <string name="milkText">Milk</string>
+    <string name="sugarText">Sugar</string>
+    <string name="orangeText">Orange</string>
 </resources>
